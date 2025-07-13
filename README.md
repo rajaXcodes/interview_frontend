@@ -60,7 +60,7 @@ Here are some previews of AlgoMentor in action:
 
 ## 📸 Demo Screenshots
 
-![Screenshot 2025-07-13 140414](images/Screenshot202025-07-13%20140414.png)
+![Screenshot 2025-07-13 140414](src/images/Screenshot 2025-07-13 140414.png)
 ![Screenshot 2025-07-13 142752](images/Screenshot202025-07-13%20142752.png)
 ![Screenshot 2025-07-13 142825](images/Screenshot202025-07-13%20142825.png)
 ![Screenshot 2025-07-13 142854](images/Screenshot202025-07-13%20142854.png)
