@@ -1,7 +1,8 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "https://algomentor-backend.onrender.com/"
+  baseURL: "https://algomentor-backend.onrender.com"
+
 });
 
 export const login = async (email: string, password: string) => {

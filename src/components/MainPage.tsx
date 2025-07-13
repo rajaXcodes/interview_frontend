@@ -11,8 +11,8 @@ const MainPage: React.FC = () => {
         <HeroSection />
         <StatsSection />
         <FeaturesSection />
-        <CTASection />
       </div>
+      <CTASection />
     </div>
   );
 };
