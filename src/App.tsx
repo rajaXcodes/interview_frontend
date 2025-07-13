@@ -5,7 +5,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import InterviewRoom from "./components/InterviewRoom";
 import Login from "./components/Login"; 
 import ProctoringAndRules from "./components/PreInterview";
-import InterviewFeedback from "./components/EndInterview";
+import InterviewFeedback from "./components/endInterview";
 import MainPage from "./components/MainPage";
 
 export default function App() {
