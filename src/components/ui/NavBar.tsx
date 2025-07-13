@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import GitHubIcon from "./github";
 const Navigation: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ const Navigation: React.FC = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 backdrop-blur-md bg-white/5 border-b border-white/10 transition-all duration-300 ${
+      className={`fixed top-0 w-full z-50 backdrop-blur-md bg-white/5 border-b border-white/10 transition-all duration-300 px-10 ${
         isScrolled ? "bg-gray-900/80" : ""
       }`}
     >
@@ -41,11 +42,28 @@ const Navigation: React.FC = () => {
             </a>
           </div>
           <div className="flex space-x-4">
-            <button className="px-4 py-2 border border-blue-500 rounded-lg hover:bg-blue-500 transition-colors" onClick={()=>navigate("/login")}>
-              Login 
+            <button
+              className="px-4 py-2 border border-blue-500 rounded-lg hover:bg-blue-500 transition-colors"
+              onClick={() => navigate("/login")}
+            >
+              Login
             </button>
-            <button className="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors" onClick={()=>navigate("/login")}>
+            <button
+              className="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors"
+              onClick={() => navigate("/login")}
+            >
               Sign Up
+            </button>
+            <button>
+              <a
+                href="https://github.com/rajaXcodes"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 hover:opacity-80 transition-opacity"
+              >
+                <GitHubIcon/>
+                GitHub
+              </a>
             </button>
           </div>
         </div>
