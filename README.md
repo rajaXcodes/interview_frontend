@@ -60,14 +60,14 @@ Here are some previews of AlgoMentor in action:
 
 ## 📸 Demo Screenshots
 
-![Screenshot 2025-07-13 140414](images/Screenshot202025-07-1320140414.png)
-![Screenshot 2025-07-13 142752](images/Screenshot202025-07-1320142752.png)
-![Screenshot 2025-07-13 142825](images/Screenshot202025-07-1320142825.png)
-![Screenshot 2025-07-13 142854](images/Screenshot202025-07-1320142854.png)
-![Screenshot 2025-07-13 142942](images/Screenshot202025-07-1320142942.png)
-![Screenshot 2025-07-13 144350](images/Screenshot202025-07-1320144350.png)
-![Screenshot 2025-07-13 144645](images/Screenshot202025-07-1320144645.png)
-![Screenshot 2025-07-13 144718](images/Screenshot202025-07-1320144718.png)
+![Screenshot 2025-07-13 140414](src/images/Screenshot 2025-07-13 140414.png)
+![Screenshot 2025-07-13 142752](src/images/Screenshot 2025-07-13 142752.png)
+![Screenshot 2025-07-13 142825](src/images/Screenshot 2025-07-13 142825.png)
+![Screenshot 2025-07-13 142854](src/images/Screenshot 2025-07-13 142854.png)
+![Screenshot 2025-07-13 142942](src/images/Screenshot 2025-07-13 142942.png)
+![Screenshot 2025-07-13 144350](src/images/Screenshot 2025-07-13 144350.png)
+![Screenshot 2025-07-13 144645](src/images/Screenshot 2025-07-13 144645.png)
+![Screenshot 2025-07-13 144718](src/images/Screenshot 2025-07-13 144718.png)
 
 
 
