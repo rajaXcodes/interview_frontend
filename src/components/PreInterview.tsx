@@ -13,8 +13,6 @@ import { useAuth } from "../contexts/AuthContext";
 import { useSession } from "../contexts/SessionContext";
 import { useNavigate } from "react-router-dom";
 
-
-
 const ProctoringAndRules: React.FC = () => {
   const navigate = useNavigate();
 
@@ -103,7 +101,7 @@ const ProctoringAndRules: React.FC = () => {
           setSessionId(newSessionId);
           navigate("/interview");
         } catch (error) {
-          alert("Cannot Start Session");
+          navigate("/login");
         } finally {
           setIsLoading(false);
         }
