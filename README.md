@@ -1,69 +1,210 @@
-# React + TypeScript + Vite
+# ⚡️ AlgoMentor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**AlgoMentor** is an AI-powered mock technical interview platform designed for **students, developers, and job-seekers** who want to **practice Data Structures & Algorithms (DSA) interviews** in a realistic environment. It helps you gain confidence, improve problem-solving skills, and get AI-powered feedback — all while being proctored like a real tech interview!
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+✅ **Realistic Mock Interviews**  
+Simulate technical coding rounds just like top tech companies.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+✅ **Monaco IDE Integration**  
+Write, run, and test code inside a powerful in-browser code editor.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+✅ **Strict Proctoring**  
+- ❌ **No copy, cut, or paste** allowed inside the IDE.
+- 🚫 **No tab switching** — get warned if you try.
+- ⚠️ **Fullscreen exit warning** — stay focused.
+- 📷 **Live video feed** to replicate real interview conditions.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+✅ **AI-Powered Feedback**  
+After each session, receive smart, actionable feedback from the AI mentor to improve your coding, problem-solving, and communication.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+✅ **Speech-to-Text + Text-to-Speech**  
+Answer and interact naturally — your voice is converted to text, and the AI responds with realistic TTS using the Puter unofficial HTML kit.
+
+✅ **Secure Authentication**  
+JWT-based authentication to keep your sessions secure.
+
+✅ **Modern Tech Stack**  
+React + Vite + TypeScript frontend. Node.js + Express backend. CORS handled for safe API calls.
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+- React
+- Vite
+- TypeScript
+- Tailwind CSS
+- Monaco Editor
+- JWT (for auth)
+- Speech Recognition & TTS integrations
+
+**Backend:**
+- Node.js
+- Express
+- CORS
+- JSON Web Tokens (`jsonwebtoken`)
+- Body Parser
+- Morgan (logging)
+- Dotenv for environment variables
+
+---
+
+## 📸 Screenshots
+
+Here are some previews of AlgoMentor in action:
+
+## 📸 Demo Screenshots
+
+## 📸 Demo Screenshots
+
+<img width="1911" height="958" alt="image" src="https://github.com/user-attachments/assets/ee7ec77f-fe88-491f-a1cd-1df34c8077a4" />
+<div align="center">
+  <img src="src/images/Screenshot 2025-07-13 142752.png" alt="Interview Room" width="600">
+  <p><em>Main interview interface with chat, video, and code editor</em></p>
+</div>
+![Screenshot 2025-07-13 140414](src/images/Screenshot 2025-07-13 140414.png)
+![Screenshot 2025-07-13 142854](src/images/Screenshot 2025-07-13 142825.png)
+![Screenshot 2025-07-13 142942](src/images/Screenshot 2025-07-13 142854.png)
+![Screenshot 2025-07-13 142825](src/images/Screenshot 2025-07-13 142942.png)
+![Screenshot 2025-07-13 144350](src/images/Screenshot 2025-07-13 144350.png)
+![Screenshot 2025-07-13 144718](src/images/Screenshot 2025-07-13 144645.png)
+![Screenshot 2025-07-13 144645](src/images/Screenshot 2025-07-13 144718.png)
+
+
+
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/algomentor.git
+cd algomentor
+````
+
+---
+
+### 2️⃣ Install Dependencies
+
+**Frontend:**
+
+```bash
+cd client
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+**Backend:**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+cd server
+npm install
+```
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+### 3️⃣ Set up `.env`
+
+Create a `.env` file in `/server` and add:
+
+```env
+PORT=4000
+JWT_SECRET=your_secret_key
+```
+
+---
+
+### 4️⃣ Run the Development Servers
+
+**Frontend:**
+
+```bash
+cd client
+npm run dev
+```
+
+**Backend:**
+
+```bash
+cd server
+npm run start
+```
+
+---
+
+### 5️⃣ Access
+
+Open your browser at [http://localhost:5173](http://localhost:5173) (or your Vite dev port).
+
+---
+
+## ✨ How It Works
+
+1. **Register/Login:** Secure JWT-based authentication.
+2. **Start Interview:** Get a random DSA question.
+3. **Speak & Code:** Answer via speech, code in Monaco IDE.
+4. **Proctoring:** No copy/cut/paste, no tab switching, fullscreen enforced — monitored like a real tech round.
+5. **AI Feedback:** Get improvement tips right after submission.
+6. **Repeat:** Practice and level up your DSA skills!
+
+---
+
+## 📜 Scripts
+
+**Frontend:**
+
+* `npm run dev` — Start Vite dev server
+* `npm run build` — Build for production
+
+**Backend:**
+
+* `npm start` — Start Express server
+
+---
+
+## 📢 Who Should Use This?
+
+**AlgoMentor** is built for:
+
+* 📚 Students preparing for coding rounds.
+* 👨‍💻 Developers brushing up on DSA.
+* 🎯 Anyone wanting realistic mock interviews with strict proctoring & real-time AI feedback.
+
+---
+
+## ❤️ Credits
+
+Built with:
+
+* [React](https://react.dev/)
+* [Vite](https://vitejs.dev/)
+* [Node.js](https://nodejs.org/)
+* [Express](https://expressjs.com/)
+* [Monaco Editor](https://microsoft.github.io/monaco-editor/)
+* [Puter TTS](https://puter.com/)
+* [react-speech-recognition](https://www.npmjs.com/package/react-speech-recognition)
+
+---
+
+## 📄 License
+
+MIT — feel free to fork & contribute!
+
+---
+
+## 🔗 Connect
+
+**Author:** \[RAJA]
+**GitHub:** [your-username](https://github.com/rajaXcodes)
+
+---
+
+**Practice confidently, code smartly — ace your next tech interview with *AlgoMentor*! 🚀**
+
 ```
