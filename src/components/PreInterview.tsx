@@ -104,7 +104,6 @@ const ProctoringAndRules: React.FC = () => {
           navigate("/interview");
         } catch (error) {
           alert("Cannot Start Session");
-          console.log("fuck error");
         } finally {
           setIsLoading(false);
         }

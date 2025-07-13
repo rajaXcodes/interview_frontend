@@ -56,7 +56,7 @@ const MonacoEditor: React.FC<MonacoEditorProps> = ({
     try {
       const result = await askModel(sessionId, "", code);
       speak(result);
-      console.log("Code submitted successfully:", result);
+    //   console.log("Code submitted successfully:", result);
     } catch (error) {
       console.error("Error submitting code:", error);
     } finally {

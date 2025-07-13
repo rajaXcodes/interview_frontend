@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: "https://algomentor-backend.onrender.com/"
 });
 
 export const login = async (email: string, password: string) => {
@@ -46,7 +46,6 @@ export const askModel = async (
   return res.data.reply;
 };
 
-//confirm endpoints
 export const testCode = async (sessionId: string, code: string) => {
   const res = await api.post(
     "/test/code",
@@ -66,6 +65,6 @@ export const endInterview = async (sessionId: string) => {
       headers: { "Content-Type": "application/json" },
     }
   );
-  console.log(res.data);
+  // console.log(res.data);
   return res.data;
 };

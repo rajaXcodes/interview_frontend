@@ -46,7 +46,7 @@ const InterviewFeedback: React.FC = () => {
     const loadFeedback = async () => {
       try {
         const response = await endInterview(sessionId);
-        console.log("API Response:", response);
+        // console.log("API Response:", response);
         setFeedback(response);
       } catch (err) {
         console.error("Error loading feedback:", err);
