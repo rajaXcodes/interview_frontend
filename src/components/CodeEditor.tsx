@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { askModel } from "../../api";
+import { useSpeech } from "../hooks/speechhook";
 declare global {
   interface Window {
     require: any;
@@ -44,14 +45,17 @@ const MonacoEditor: React.FC<MonacoEditorProps> = ({
   };
 
   const handleSubmit = async () => {
+    // if (!sessionId) return;
     if (!editor || !sessionId) return;
 
     setIsSubmitting(true);
     const code = editor.getValue();
+    if (!sessionId) return;
+    const { speak } = useSpeech({ sessionId });
 
     try {
       const result = await askModel(sessionId, "", code);
-
+      speak(result);
       console.log("Code submitted successfully:", result);
     } catch (error) {
       console.error("Error submitting code:", error);
@@ -204,7 +208,7 @@ const MonacoEditor: React.FC<MonacoEditorProps> = ({
         <button
           onClick={handleSubmit}
           disabled={isSubmitting || !sessionId}
-          className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 disabled:cursor-not-allowed text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200"
+          className="max-w-md bg-gradient-to-r from-indigo-900 to-indigo-700 hover:from-indigo-800 hover:to-indigo-600 disabled:from-gray-600 disabled:to-gray-500 disabled:cursor-not-allowed text-white font-medium py-2 px-4 rounded-lg transition-all duration-200"
         >
           {isSubmitting ? "Submitting..." : "Submit Code"}
         </button>

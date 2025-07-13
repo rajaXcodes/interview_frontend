@@ -4,10 +4,9 @@ import { SessionProvider } from "./contexts/SessionContext";
 import PrivateRoute from "./components/PrivateRoute";
 import InterviewRoom from "./components/InterviewRoom";
 import Login from "./components/Login"; 
-import HeroPage from "./components/HeroPage"; 
 import ProctoringAndRules from "./components/PreInterview";
-import Dictaphone from "./components/ui/speaking";
 import InterviewFeedback from "./components/endInterview";
+import MainPage from "./components/MainPage";
 
 export default function App() {
   return (
@@ -15,8 +14,7 @@ export default function App() {
       <SessionProvider>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<HeroPage />} />
-            <Route path="/speak" element={< Dictaphone/>} />
+            <Route path="/" element={<MainPage/>} />
             <Route path="/login" element={<Login />} />
             <Route
               path="/pre"

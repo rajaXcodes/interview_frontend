@@ -1,5 +1,4 @@
 import { useState, useEffect, useCallback } from "react";
-import { endInterview } from "../../api";
 import Toast from "./ui/toast";
 import ChatPanel from "./ui/chatPanel";
 import { useNavigate } from "react-router-dom";
@@ -52,9 +51,8 @@ export default function InterviewRoom() {
   // End interview
   const handleEndInterview = useCallback(async () => {
     abortAll();
-    await endInterview(sessionId!);
     navigate("/feedback");
-  }, [sessionId, abortAll, navigate]);
+  }, [sessionId, abortAll]);
 
   if (!sessionId) {
     return (

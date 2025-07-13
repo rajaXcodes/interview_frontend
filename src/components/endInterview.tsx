@@ -12,7 +12,6 @@ import { useNavigate } from "react-router-dom";
 import { endInterview } from "../../api";
 import { useSession } from "../contexts/SessionContext";
 
-
 interface FeedbackData {
   overallScore: number;
   maxScore: number;
@@ -36,18 +35,21 @@ const InterviewFeedback: React.FC = () => {
   const navigate = useNavigate();
   const { sessionId } = useSession();
 
-  if (!sessionId) {
-    navigate("/");
-  }
   useEffect(() => {
+    // Move the sessionId check inside useEffect
+    if (!sessionId) {
+      navigate("/");
+      return;
+    }
+
     document.exitFullscreen();
     const loadFeedback = async () => {
       try {
-        if (sessionId) {
-          const data = await endInterview(sessionId);
-          setFeedback(data);
-        }
+        const response = await endInterview(sessionId);
+        console.log("API Response:", response);
+        setFeedback(response);
       } catch (err) {
+        console.error("Error loading feedback:", err);
         setError("Failed to load feedback. Please try again.");
       } finally {
         setLoading(false);
@@ -55,7 +57,7 @@ const InterviewFeedback: React.FC = () => {
     };
 
     loadFeedback();
-  }, []);
+  }, [sessionId, navigate]);
 
   const getScoreColor = (score: number, max: number) => {
     const percentage = (score / max) * 100;
@@ -146,7 +148,7 @@ const InterviewFeedback: React.FC = () => {
                 className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors flex items-center space-x-2"
               >
                 <Home className="w-4 h-4" />
-                <span>Dashboard</span>
+                <span>Home</span>
               </button>
             </div>
           </div>

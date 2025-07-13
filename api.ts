@@ -66,5 +66,6 @@ export const endInterview = async (sessionId: string) => {
       headers: { "Content-Type": "application/json" },
     }
   );
-  return res.data.reply;
+  console.log(res.data);
+  return res.data;
 };
