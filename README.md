@@ -63,7 +63,10 @@ Here are some previews of AlgoMentor in action:
 ## 📸 Demo Screenshots
 
 <img width="1911" height="958" alt="image" src="https://github.com/user-attachments/assets/ee7ec77f-fe88-491f-a1cd-1df34c8077a4" />
-![Screenshot 2025-07-13 142752](src/images/Screenshot 2025-07-13 142752.png)
+<div align="center">
+  <img src="src/images/Screenshot 2025-07-13 142752.png" alt="Interview Room" width="600">
+  <p><em>Main interview interface with chat, video, and code editor</em></p>
+</div>
 ![Screenshot 2025-07-13 140414](src/images/Screenshot 2025-07-13 140414.png)
 ![Screenshot 2025-07-13 142854](src/images/Screenshot 2025-07-13 142825.png)
 ![Screenshot 2025-07-13 142942](src/images/Screenshot 2025-07-13 142854.png)
