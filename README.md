@@ -83,20 +83,31 @@ React + Vite + TypeScript frontend. Node.js + Express backend. CORS handled for 
 Here’s AlgoMentor in action:
 
 <div align="center">
- <img width="1913" height="965" alt="image" src="https://github.com/user-attachments/assets/3d62f533-1bd8-421c-a195-925e0ce0deaa" />
- <p>Hero Page</p>
+  <img width="1913" height="965" alt="Hero Page" src="https://github.com/user-attachments/assets/3d62f533-1bd8-421c-a195-925e0ce0deaa" />
+  <p><em>Hero Page</em></p>
+
   <img src="src/images/Screenshot 2025-07-13 140414.png" width="1913" height="965" />
   <p><em>Main interview interface with chat, video, and code editor</em></p>
 </div>
-<p float="left">
-  <img src="src/images/Screenshot 2025-07-13 142752.png" width="300" />
-  <img src="src/images/Screenshot 2025-07-13 142825.pngg" width="300" />
-  <img src="src/images/Screenshot 2025-07-13 142854.png" width="300" />
-  <img src="src/images/Screenshot 2025-07-13 142942.png" width="300" />
-  <img src="src/images/Screenshot 2025-07-13 144350.png" width="300" />
-  <img src="src/images/Screenshot 2025-07-13 144645.png" width="300" />
-  <img src="src/images/Screenshot 2025-07-13 144718.png" width="300" />
-</p>
+
+<div align="center">
+  <img src="src/images/Screenshot 2025-07-13 142752.png" width="500" />
+  <p><em>Login Page</em></p>
+
+  <img src="src/images/Screenshot 2025-07-13 142825.png" width="500" />
+  <img src="src/images/Screenshot 2025-07-13 142854.png" width="500" />
+  <p><em>Pre-Interview Instruction Page</em></p>
+
+  <img src="src/images/Screenshot 2025-07-13 142942.png" width="500" />
+  <img src="src/images/Screenshot 2025-07-13 144350.png" width="500" />
+  <p><em>Interview Page</em></p>
+
+
+  <img src="src/images/Screenshot 2025-07-13 144645.png" width="500" />
+  <img src="src/images/Screenshot 2025-07-13 144718.png" width="500" />
+  <p><em>Feedback Page</em></p>
+</div>
+
 
 ---
 
