@@ -83,20 +83,20 @@ React + Vite + TypeScript frontend. Node.js + Express backend. CORS handled for 
 Here’s AlgoMentor in action:
 
 <div align="center">
-  <img src="./assets/Screenshot-Interview-Room.png" alt="Interview Room" width="600" />
+ <img width="1913" height="965" alt="image" src="https://github.com/user-attachments/assets/3d62f533-1bd8-421c-a195-925e0ce0deaa" />
+ <p>Hero Page</p>
+  <img src="src/images/Screenshot 2025-07-13 140414.png" width="1913" height="965" />
   <p><em>Main interview interface with chat, video, and code editor</em></p>
 </div>
-
 <p float="left">
-  <img src="./assets/Screenshot-1.png" width="300" />
-  <img src="./assets/Screenshot-2.png" width="300" />
-  <img src="./assets/Screenshot-3.png" width="300" />
-  <img src="./assets/Screenshot-4.png" width="300" />
-  <img src="./assets/Screenshot-5.png" width="300" />
-  <img src="./assets/Screenshot-6.png" width="300" />
+  <img src="src/images/Screenshot 2025-07-13 142752.png" width="300" />
+  <img src="src/images/Screenshot 2025-07-13 142825.pngg" width="300" />
+  <img src="src/images/Screenshot 2025-07-13 142854.png" width="300" />
+  <img src="src/images/Screenshot 2025-07-13 142942.png" width="300" />
+  <img src="src/images/Screenshot 2025-07-13 144350.png" width="300" />
+  <img src="src/images/Screenshot 2025-07-13 144645.png" width="300" />
+  <img src="src/images/Screenshot 2025-07-13 144718.png" width="300" />
 </p>
-
-> ✅ **Tip:** Store your images in a folder like `assets/` in your repo and update the `src` path accordingly. GitHub renders relative paths perfectly.
 
 ---
 
